@@ -177,7 +177,7 @@ static void SendRpc(grpc::cpp::test::util::TestService::Stub* stub,
                     int num_rpcs) {
   EchoRequest request;
   EchoResponse response;
-  request.set_message("Hello");
+  request.set_message("Hello World.");
 
   for (int i = 0; i < num_rpcs; ++i) {
     ClientContext context;
